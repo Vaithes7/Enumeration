@@ -33,22 +33,32 @@ Google hacking, also known as Google dorking, is a technique that involves using
 site: This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
 Following searches for all the sites that is in the domain yahoo.com
 
+![site:yahoo.com](img/01-siteyahoo.com.png)
+
 filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
 Following searches for pdf file in the domain yahoo.com
 
-
+![filetype](<img/02-siteyahoo.com pass.png>)
 
 intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
 
+![intext](img/03-admin.png)
 
 inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
 
+![inurl](img/04-indexof.png)
+
 intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
+
+![index](img/04-indexof.png)
 
 link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
 
+![link](img/05-example.png)
+
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
 
+![domain](img/06-domain.png)
  
 #DNS Enumeration
 
@@ -62,12 +72,12 @@ Top level domain expansion
 ## OUTPUT:
 
 
+![dnsrecon](img/07.png)
+![alt text](img/08.png)
 
 
 
-
-
-##dnsenum
+## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
 Get the host’s addresses (A record).
@@ -81,14 +91,20 @@ Perform reverse lookups on netranges (C class or/and whois netranges) (threaded)
 Write to domain_ips.txt file ip-blocks.
 This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
 
+![09](img/09.png)
 
-##smtp-user-enum
+
+## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
 
+![10](img/10.png)
 
 In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 
+![11](img/11.png)
+
 select any username in the first column of the above file and check the same
+
 
 
 #Telnet for smtp enumeration
@@ -96,9 +112,9 @@ Telnet allows to connect to remote host based on the port no. For smtp port no i
 telnet <host address> 25 to connect
 and issue appropriate commands
   
- ##Output
+ ## Output
   
-  
+  ![12](img/11.png)
 
 ## nmap –script smtp-enum-users.nse <hostname>
 
@@ -107,6 +123,7 @@ The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server 
 
 ## OUTPUT:
 
+![13](img/12.png)
 
 ## RESULT:
 The Google hacking keywords and enumeration tools were identified and executed successfully
